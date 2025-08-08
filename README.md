@@ -23,7 +23,7 @@ Con respecto al diseño base otorgado en el enunciado de la tarea 01, se han rea
 	Se sugiere el uso de AWS CloudWatch en conjunto con las funciones Lambda como método de monitoreo del sistema.
 
 **Wallet Namespace:**
-	Se decide mantener el Wallet y el Volumen de Certificados en un namespace en conjunto, debido a que estos son los servicios que estarán interactuando con la implementación de Blockchain de forma más regular para obtener los contratos o hash generados por este último.
+	Se decide mantener el Wallet y el Volumen de Certificados en un namespace en conjunto, debido a que estos son los servicios que estarán interactuando con la implementación de Blockchain de forma más regular para obtener los contratos o hash generados por este último. Se separan del CApp namespace para evitar que este pueda ser comprometido a través de un fácil acceso desde la aplicación.
 
 **User Namespace:**
 	Se separa el servicio de Usuario para del CApp para evitar algún problema o manipulación del registro o ingreso de usuarios, debido a que el servicio de Usuario es el encargado de gestionar estos procesos y datos.
